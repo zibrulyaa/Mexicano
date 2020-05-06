@@ -2,6 +2,7 @@
 @import "vars";
 @import "fonts";
 
+// start header
 .header {
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,3 +68,224 @@
     }
   }
 }
+// end header
+
+// start info
+.info {
+  background-color: $gray;
+  position: relative;
+  min-height: 700px;
+}
+.info__inner {
+  max-width: 1650px;
+  background-color: #fff;
+  position: absolute;
+  top: -60px;
+  left: auto;
+  right: auto;
+  box-shadow: 0px 6px 11.04px 0.96px rgba(0, 0, 0, 0.11);
+  border-radius: 7px;
+}
+.info__item {
+  display: flex;
+  height: 402px;
+  text-align: center;
+  width: 100%;
+  border-radius: 7px;
+  &-image {
+    border-top-left-radius: 7px;
+    background-image: url(../images/info-1.jpg);
+    height: 402px;
+    min-width: 1048px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
+  .info__item-abc {
+    background-image: url(../images/info-2.jpg);
+    min-width: 600px;
+    width: 100%;
+    border-bottom-right-radius: 7px;
+  }
+  &-title {
+    color: $blue;
+    @include pacifico;
+    font-size: 72px;
+    line-height: 80px;
+    padding-top: 20px;
+  }
+  &-text {
+    padding-top: 20px;
+    font-size: 21px;
+    @include m400;
+    color: $text;
+    line-height: 30px;
+    padding: 30px 100px 0;
+  }
+  .info__item-about {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    padding-top: 70px;
+  }
+  &-btn {
+    display: inline-block;
+    color: $blue;
+    margin-top: 40px;
+    @include m600;
+    font-size: 24px;
+    padding: 24px 40px;
+    border: 4px solid $blue;
+    border-radius: 3px;
+    transition: all 0.3s;
+    &:hover {
+      color: #fff;
+      background-color: $blue;
+    }
+  }
+}
+// end info
+// start specialist
+.specialist {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 996px;
+}
+.specialist__title {
+  @include secroad;
+  font-size: 270px;
+  color: #fff;
+  text-align: center;
+  line-height: 150px;
+  padding-top: 270px;
+  position: relative;
+}
+// end specialist
+
+// start products__menu
+.products__menu {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1714px;
+}
+.products__menu-title {
+  @include marck;
+  font-size: 210px;
+  text-align: center;
+  line-height: 200px;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: #d9edf7;
+    width: 138px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    right: 50%;
+  }
+}
+.products__menu-subtitle {
+  text-align: center;
+  margin-top: 67px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #878787;
+  @include m600;
+  margin-bottom: 65px;
+}
+.product__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  z-index: 1;
+}
+.product__box {
+  display: flex;
+  align-items: center;
+  & + .product__box {
+    padding-top: 50px;
+  }
+}
+.product__item {
+  max-width: 500px;
+
+  &-title {
+    font-size: 27px;
+    @include m600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &-text {
+    color: #393939;
+    line-height: 20px;
+    span {
+      display: block;
+      @include m600;
+    }
+  }
+}
+.product__row {
+  padding-bottom: 50px;
+}
+.product-price {
+  font-size: 85px;
+  @include m700;
+  color: $blue;
+  padding-left: 10px;
+  span {
+    @include m400;
+    font-size: 48px;
+  }
+}
+.products__menu {
+  position: relative;
+  z-index: 0;
+}
+.products__wrapper {
+  position: relative;
+  z-index: 5;
+}
+.products__food {
+  &-left {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    top: 30%;
+  }
+  &-right {
+    position: absolute;
+    right: 0;
+    top: 44%;
+    z-index: 0;
+  }
+  &-left-top {
+    position: absolute;
+    left: 0;
+    top: -150px;
+  }
+  &-left-bottom {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+  &-right-top {
+    position: absolute;
+    top: -100px;
+    right: 0;
+  }
+  &-right-bottom {
+    right: 0;
+    bottom: -50px;
+    position: absolute;
+  }
+  &-center-bottom {
+    position: absolute;
+    left: 43%;
+    // right: 50%;
+    bottom: -20px;
+  }
+}
+// end products__menu
