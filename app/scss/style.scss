@@ -1,8 +1,69 @@
-html {
-  box-sizing: border-box;
+@import "global";
+@import "vars";
+@import "fonts";
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 1080px;
+  text-align: center;
+  &__logo {
+    margin-bottom: 105px;
+  }
+  &__title {
+    font-size: 93px;
+    @include m600;
+    color: #fff;
+  }
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.menu {
+  padding-top: 80px;
+  margin-bottom: 245px;
+  &__list {
+    li {
+      display: inline-block;
+
+      & + li {
+        margin-left: 56px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          background-color: #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: 9px;
+          left: -26px;
+        }
+      }
+    }
+  }
+  a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    @include m600;
+    font-size: 24px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 4px;
+      border-radius: 3px;
+      bottom: -5px;
+      background-color: #fff;
+      transition: width 0.3s ease;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
 }
