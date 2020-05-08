@@ -15,7 +15,7 @@
           style="background-image: url(images/header__bg.jpg);"
         >
           <div class="container">
-            <nav class="menu">
+            <nav class="menu wow animate__bounceInLeft">
               <ul class="menu__list">
                 <li>
                   <a href="#">главная</a>
@@ -31,12 +31,12 @@
                 </li>
               </ul>
             </nav>
-            <div class="header__logo">
+            <div class="header__logo wow animate__zoomIn">
               <a href="#">
                 <img src="images/logo.png" alt="" />
               </a>
             </div>
-            <div class="header__title">
+            <div class="header__title wow animate__bounceInRight">
               РЕСТОРАН & БАР
             </div>
           </div>
@@ -46,7 +46,7 @@
             <div class="info__inner">
               <div class="info__item">
                 <div class="info__item-image"></div>
-                <div class="info__item-box">
+                <div class="info__item-box wow animate__slideInRight">
                   <div class="info__item-title">Бронирование</div>
                   <div class="info__item-text">
                     Позвоните нам прямо сейчас, чтобы заказать стол в нашем
@@ -57,7 +57,10 @@
                 </div>
               </div>
               <div class="info__item">
-                <div class="info__item-box">
+                <div
+                  class="info__item-box wow animate__slideInLeft"
+                  data-wow-offset="200"
+                >
                   <div class="info__item-title">О ресторане</div>
                   <div class="info__item-text info__item-about">
                     Мы всегда рады видеть поклонников пестрого и веселого
@@ -81,7 +84,12 @@
           style="background-image: url(images/specialist.jpg);"
         >
           <div class="container">
-            <div class="specialist__title">Мы специалисты</div>
+            <div
+              class="specialist__title wow animate__fadeInUpBig"
+              data-wow-offset="400"
+            >
+              Мы специалисты
+            </div>
           </div>
         </section>
 
@@ -112,10 +120,12 @@
           </div>
           <div class="container__fluid">
             <div class="products__wrapper">
-              <div class="products__menu-title">Меню</div>
+              <div class="products__menu-title wow animate__zoomIn">
+                Меню
+              </div>
               <div class="products__menu-subtitle">Еда и закуски</div>
               <div class="product__row">
-                <div class="product__col">
+                <div class="product__col wow animate__slideInLeft">
                   <div class="product__box">
                     <div class="product__item">
                       <div class="product__item-title">Гаспачо</div>
@@ -154,7 +164,7 @@
                     <div class="product-price">400<span>₽</span></div>
                   </div>
                 </div>
-                <div class="product__col">
+                <div class="product__col wow animate__slideInRight">
                   <div class="product__box">
                     <div class="product__item">
                       <div class="product__item-title">КЕСАДИЛЬЯ</div>
@@ -200,7 +210,7 @@
               </div>
 
               <div class="product__row">
-                <div class="product__col">
+                <div class="product__col wow animate__slideInLeft">
                   <div class="product__box">
                     <div class="product__item">
                       <div class="product__item-title">ШОКОЛАДНЫЙ ТОРТ</div>
@@ -239,7 +249,7 @@
                     <div class="product-price">260<span>₽</span></div>
                   </div>
                 </div>
-                <div class="product__col">
+                <div class="product__col wow animate__slideInRight">
                   <div class="product__box">
                     <div class="product__item">
                       <div class="product__item-title">Мороженое</div>
@@ -286,12 +296,16 @@
           style="background-image: url(images/delivery.jpg);"
         >
           <div class="container">
-            <div class="delivery__title">
+            <div
+              class="delivery__title wow animate__slideInUp"
+              data-wow-offset="400"
+            >
               Доставим <span>горячим</span> в ваши руки
             </div>
           </div>
         </section>
       </div>
+
       <div class="footer">
         <div
           class="footer__top"
@@ -299,12 +313,12 @@
         >
           <div class="container__fluid">
             <div class="footer__box">
-              <div class="footer__box-title">
+              <div class="footer__box-title wow animate__zoomIn">
                 Местоположение
               </div>
               <div class="container">
                 <div class="footer__box-items">
-                  <div class="footer__box-item">
+                  <div class="footer__box-item wow animate__bounceInLeft">
                     <div class="footer__item-locate">
                       г. Астрахань
                       <span>улица Космонавтов</span>
@@ -313,7 +327,7 @@
                       >+79402393493</a
                     >
                   </div>
-                  <div class="footer__box-item">
+                  <div class="footer__box-item wow animate__bounceInRight">
                     <a href="tel: 79402393493" class="footer__item-btn">
                       Заказать доставку
                       <span>
@@ -324,10 +338,16 @@
                 </div>
               </div>
               <div class="footer__inner">
-                <div class="footer__item-image">
+                <div
+                  class="footer__item-image wow animate__zoomIn"
+                  data-wow-offset="200"
+                >
                   <img src="images/footer-image-1.jpg" alt="" />
                 </div>
-                <div class="footer__item-image">
+                <div
+                  class="footer__item-image wow animate__zoomIn"
+                  data-wow-offset="200"
+                >
                   <img src="images/footer-image-2.jpg" alt="" />
                 </div>
               </div>
@@ -335,13 +355,13 @@
           </div>
           <div class="footer__contacts">
             <div class="container">
-              <div class="footer__contacts-title">
+              <div class="footer__contacts-title wow animate__zoomIn">
                 ПРИСОЕДИЯЙТЕСЬ К НАМ
               </div>
-              <div class="footer__contacts-subtitle">
+              <div class="footer__contacts-subtitle wow animate__zoomIn">
                 ПОЛУЧИТЕ ПРОМОКОД НА ВАШ ПЕРВЫЙ ЗАКАЗ
               </div>
-              <div class="footer__contacts-form">
+              <div class="footer__contacts-form wow animate__slideInUp">
                 <form>
                   <input type="text" />
                   <button type="submit">ПРИСОЕДИНИТЬСЯ</button>
@@ -353,11 +373,13 @@
 
         <div class="footer__copy">
           <div class="container">
-            <div class="footer__copy-title">
-              Здоровая мексиканская еда быстрого приготовления
-            </div>
-            <div class="footer__copy-text">
-              © ВСЕ ПРАВА ЗАЩИЩЕНЫ
+            <div class="footer__copy-inner wow animate__slideInUp">
+              <div class="footer__copy-title">
+                Здоровая мексиканская еда быстрого приготовления
+              </div>
+              <div class="footer__copy-text">
+                © ВСЕ ПРАВА ЗАЩИЩЕНЫ
+              </div>
             </div>
           </div>
         </div>
@@ -366,6 +388,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
