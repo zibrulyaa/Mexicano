@@ -11,20 +11,35 @@
   text-align: center;
   &__logo {
     margin-bottom: 105px;
+    margin-top: 245px;
+    display: block;
   }
   &__title {
+    line-height: 100px;
     font-size: 93px;
     @include m600;
     color: #fff;
+    margin-bottom: 55px;
+  }
+}
+.header__btn {
+  display: none;
+  margin-left: 40px;
+  &-line {
+    background-color: #fff;
+    width: 50px;
+    height: 3px;
+    & + .header__btn-line {
+      margin-top: 10px;
+    }
   }
 }
 .menu {
   padding-top: 80px;
-  margin-bottom: 245px;
   &__list {
+    display: block;
     li {
       display: inline-block;
-
       & + li {
         margin-left: 56px;
         position: relative;
@@ -42,7 +57,6 @@
     }
   }
   a {
-    display: block;
     color: #fff;
     text-transform: uppercase;
     @include m600;
@@ -68,6 +82,7 @@
     }
   }
 }
+
 // end header
 
 // start info
@@ -88,22 +103,15 @@
 }
 .info__item {
   display: flex;
-  height: 402px;
   text-align: center;
   width: 100%;
   border-radius: 7px;
   &-image {
     border-top-left-radius: 7px;
-    background-image: url(../images/info-1.jpg);
-    height: 402px;
-    min-width: 1048px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
+    width: 1048px;
   }
   .info__item-abc {
-    background-image: url(../images/info-2.jpg);
-    min-width: 600px;
+    width: 600px;
     width: 100%;
     border-bottom-right-radius: 7px;
   }
@@ -115,12 +123,11 @@
     padding-top: 20px;
   }
   &-text {
-    padding-top: 20px;
     font-size: 21px;
     @include m400;
     color: $text;
     line-height: 30px;
-    padding: 30px 100px 0;
+    padding: 30px 100px 20px;
   }
   .info__item-about {
     padding-left: 30px;
@@ -150,6 +157,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 996px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .specialist__title {
   @include secroad;
@@ -157,7 +167,6 @@
   color: #fff;
   text-align: center;
   line-height: 150px;
-  padding-top: 270px;
   position: relative;
 }
 // end specialist
@@ -183,8 +192,8 @@
     border-radius: 5px;
     position: absolute;
     bottom: 0;
-    left: 47%;
-    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 .products__menu-subtitle {
@@ -233,6 +242,7 @@
 }
 .product-price {
   font-size: 85px;
+  line-height: 85px;
   @include m700;
   color: $blue;
   padding-left: 10px;
@@ -315,6 +325,7 @@
 .footer__top {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 1259px;
   position: relative;
   .footer__box {
@@ -324,8 +335,8 @@
 
     position: absolute;
     top: -50px;
-    left: auto;
-    right: auto;
+    left: 50%;
+    transform: translate(-50%);
     box-shadow: 0px 6px 11.04px 0.96px rgba(0, 0, 0, 0.11);
     border-radius: 8px;
   }
@@ -340,7 +351,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: 45%;
+      left: 50%;
+      transform: translate(-50%);
       right: auto;
       bottom: 40px;
       background-color: $blue;
@@ -419,6 +431,7 @@
     max-width: 370px;
     text-transform: uppercase;
     font-size: 27px;
+    line-height: 34px;
     @include m600;
     margin-bottom: 55px;
   }
@@ -426,14 +439,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     input {
       border: none;
       background-color: rgba(255, 255, 255, 0.4);
       border-radius: 6px;
       height: 86px;
       width: 800px;
+      padding: 0 15px;
+      color: #fff;
+      font-size: 25px;
     }
     button {
+      cursor: pointer;
       background-color: $blue;
       margin-left: 40px;
       color: #fff;
@@ -466,3 +484,5 @@
   }
 }
 // end footer
+
+@import "media";
